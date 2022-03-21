@@ -1,10 +1,42 @@
 import './App.css';
 import Main from './components/main';
+import { createGlobalStyle } from 'styled-components';
 
 function App() {
   return (
-    <Main />
+    <>
+      <GlobalStyle />
+      <Main />
+    </>
   );
 }
 
 export default App;
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 14px;
+  }
+`
