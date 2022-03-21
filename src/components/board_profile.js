@@ -28,6 +28,14 @@ const FlexBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+        display: flex;
+        align-items: center;
+    }
+    button {
+        display: flex;
+        align-items: center;
+    }
 `;
 
 const InstaProfile = styled.img`
