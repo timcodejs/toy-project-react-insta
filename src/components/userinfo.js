@@ -7,19 +7,22 @@ import styled from 'styled-components';
 
 const Userinfo = () => {
     return(
-        <InstaUserInfo>
-            <UserProfile />
-            <Recommend />
-            <Infometa />
-        </InstaUserInfo>
+        <>
+            <InstaUserInfo>
+                <UserProfile />
+                <Recommend />
+                <Infometa />
+            </InstaUserInfo>
+        </>
     )
 }
 
 export default Userinfo;
 
 const InstaUserInfo = styled.div`
-    /* position: fixed; */
-    /* right: 17%; */
+    position: fixed;
+    left: 50%;
+    transform: translateX( 50% );
     width: 310px;
     margin-top: 20px;
     background-color: rgba(var(--b3f,250,250,250),1);
