@@ -1,10 +1,17 @@
 import React from 'react';
+import Story from './story';
+import Board from './board';
 import styled from 'styled-components';
 
 const Container = () => {
+    const state = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
     return(
         <InstaContainer>
-            "Container"
+            <Story />
+            {state.map(() => (
+                <Board />
+            ))}
         </InstaContainer>
     )
 }

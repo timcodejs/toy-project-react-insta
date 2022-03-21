@@ -23,7 +23,10 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: sans-serif;
+      -ms-overflow-style: none;
   }
+
+  ::-webkit-scrollbar { display: none; }
   
   a {
     color: #000;

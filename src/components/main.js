@@ -19,6 +19,7 @@ const Main = () => {
 export default Main;
 
 const Wrap = styled.div`
+    width: 100%;
     background-color: rgba(var(--b3f,250,250,250),1);
 `
 const Cont = styled.div`
