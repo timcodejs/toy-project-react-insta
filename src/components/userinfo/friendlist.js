@@ -9,10 +9,10 @@ const Friendlist = () => {
         {state.map(() => (
             <Profile>
                 <ProfileInner>
-                    <button><InstaProfile src="images/insta_profile.png"  alt="profile" /></button>
+                    <button><img src="images/cont_icon5.png"  alt="profile" /></button>
                     <div>
-                        <UserName><a href="/">UserName</a></UserName>
-                        <UserComment>UserComment</UserComment>
+                        <p><a href="/">UserName</a></p>
+                        <p>UserComment</p>
                     </div>
                 </ProfileInner>
                 <TextColorBlue>팔로우</TextColorBlue>
@@ -38,20 +38,17 @@ const Profile = styled.div`
 const ProfileInner = styled.div`
     display: flex;
     align-items: center;
-`;
-
-const UserName = styled.p`
-    font-weight: 600;
-`;
-
-const UserComment = styled.p`
-    color: gray;
-`;
-
-const InstaProfile = styled.img`
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    button > img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    div > p:nth-child(1) {
+        font-weight: 600;
+    }
+    div > p:nth-child(2) {
+        color: gray;
+    }
 `;
 
 const TextColorBlue = styled.p`

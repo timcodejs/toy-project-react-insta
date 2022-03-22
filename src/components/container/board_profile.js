@@ -5,10 +5,10 @@ const Boardprofile = () => {
     return(
         <ProfileWrap>
             <FlexBox>
-                <FlexBox><a href="/"><InstaProfile src="images/insta_profile.png"  alt="profile" /></a></FlexBox>
-                <UserName><a href="/">UserName</a></UserName>
+                <div><a href="/"><img src="images/insta_profile.png"  alt="profile" /></a></div>
+                <div><a href="/">UserName</a></div>
             </FlexBox>
-            <FlexBox><button><InstaMoreBtn src="images/insta_morebtn.png"  alt="morebtn" /></button></FlexBox>
+            <div><button><img src="images/insta_morebtn.png"  alt="morebtn" /></button></div>
         </ProfileWrap>
     )
 }
@@ -22,12 +22,27 @@ const ProfileWrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    div:nth-child(2) > button > img {
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
 `;
 
 const FlexBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    div:nth-child(1) > a > img {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+    div:nth-child(2) {
+        font-size: 14px;
+        font-weight: 600;
+    }
     a {
         display: flex;
         align-items: center;
@@ -36,21 +51,4 @@ const FlexBox = styled.div`
         display: flex;
         align-items: center;
     }
-`;
-
-const InstaProfile = styled.img`
-    width: 35px;
-    height: 35px;
-    margin-right: 15px;
-`;
-
-const UserName = styled.div`
-    font-size: 14px;
-    font-weight: 600;
-`;
-
-const InstaMoreBtn = styled.img`
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
 `;

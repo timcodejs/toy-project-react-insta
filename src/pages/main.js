@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './header';
-import Container from './container';
-import Userinfo from './userinfo';
+import Header from '../components/header/header';
+import Container from '../components/container/container';
+import Userinfo from '../components/userinfo/userinfo';
 import styled from 'styled-components';
 
 const Main = () => {

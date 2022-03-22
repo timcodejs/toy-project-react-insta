@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './logo';
 import Search from './search';
 import Navi from './navi';
 import styled from 'styled-components';
@@ -8,7 +7,7 @@ const Header = () => {
     return(
         <HeaderWrap>
             <HeaderInner>
-                <Logo />
+                <div><a href="/"><InstaLogo src="images/insta_logo.png"  alt="logo" /></a></div>
                 <Search />
                 <Navi />
             </HeaderInner>
@@ -36,4 +35,9 @@ const HeaderInner = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+`;
+
+const InstaLogo = styled.img`
+    height: 29px;
+    margin-top: 10px;
 `;

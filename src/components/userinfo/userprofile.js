@@ -6,10 +6,10 @@ const UserProfile = () => {
         <Profile>
             <ProfileInner>
                 <button><InstaProfile src="images/insta_profile.png"  alt="profile" /></button>
-                <div>
-                    <UserName><a href="/">UserName</a></UserName>
-                    <UserComment>UserComment</UserComment>
-                </div>
+                <ProfileNmae>
+                    <p><a href="/">UserName</a></p>
+                    <p>UserComment</p>
+                </ProfileNmae>
             </ProfileInner>
             <TextColorBlue>전환</TextColorBlue>
         </Profile>
@@ -30,12 +30,13 @@ const ProfileInner = styled.div`
     align-items: center;
 `;
 
-const UserName = styled.p`
-    font-weight: 600;
-`;
-
-const UserComment = styled.p`
-    color: gray;
+const  ProfileNmae = styled.div`
+    p:nth-child(1) {
+        font-weight: 600;
+    }
+    p:nth-child(2) {
+        color: gray;
+    }
 `;
 
 const InstaProfile = styled.img`

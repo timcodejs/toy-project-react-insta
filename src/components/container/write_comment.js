@@ -33,8 +33,12 @@ const ContentInner = styled.div`
     display: flex;
     align-items: center;
     input {
+        width: 500px;
         border: 0;
         font-size: inherit;
+    }
+    input:focus {
+        outline: none;
     }
 `;
 
