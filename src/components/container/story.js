@@ -25,6 +25,7 @@ const StoryDiv = styled.div`
     background: rgba(var(--d87,255,255,255),1);
     border-radius: 3px;
     padding: 15px 10px;
+    ::-webkit-scrollbar { display: none; }
 `;
 
 const StoryList = styled.ul`

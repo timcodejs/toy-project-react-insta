@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
       -ms-overflow-style: none;
   }
 
-  ::-webkit-scrollbar { display: none; }
+  
   
   a {
     color: #000;

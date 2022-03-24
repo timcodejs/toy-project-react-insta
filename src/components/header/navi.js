@@ -86,7 +86,6 @@ const InstaProfile2 = styled.button`
     }
 `;
 
-
 const PopupWrap = styled.div`
     position: absolute;
     width: 100vw;
@@ -114,7 +113,7 @@ const PopupProfile = styled.div`
         height: 13px;
         transform: rotate(45deg);
         top: -5px;
-        right: 28px;
+        right: 37px;
     }
     li {
         width: 198px;
