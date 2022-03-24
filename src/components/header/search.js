@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 const Search = () => {
     const [search, setSerch] = useState('none');
 
-    const onSearchPopupOpen = () => {
+    const onSearchPopupOpen = useCallback(() => {
         setSerch('block');
-    }
+    }, []);
 
-    const onSearchPopupClose = () => {
+    const onSearchPopupClose = useCallback(() => {
         setSerch('none');
-    }
+    }, []);
 
     return(
         <MarginDiv>

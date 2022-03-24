@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 const Navi = () => {
     const [profile, setProfile] = useState(false);
     const [opacity, setOpacity] = useState('none');
 
-    const onUserProfileOpen = () => {
+    const onUserProfileOpen = useCallback(() => {
         setProfile(true);
         setOpacity('block');
-    }
-    const onUserProfileClose = () => {
+    }, []);
+
+    const onUserProfileClose = useCallback(() => {
         setProfile(false);
         setOpacity('none');
-    }
+    }, []);
 
     return(
         <div>
