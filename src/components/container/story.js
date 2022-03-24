@@ -6,8 +6,8 @@ const Story = () => {
     return(
         <StoryDiv>
             <StoryList>
-                {state.map(() => (
-                    <li>
+                {state.map((item) => (
+                    <li key={item}>
                         <p><StoryItemImg src="/images/cont_icon4.png" alt="" /></p>
                         <p><TextSpan>UserName</TextSpan></p>
                     </li>

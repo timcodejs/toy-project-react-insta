@@ -6,8 +6,8 @@ const Friendlist = () => {
 
     return(
         <ProfileWrap>
-        {state.map(() => (
-            <Profile>
+        {state.map((item) => (
+            <Profile key={item}>
                 <ProfileInner>
                     <button><img src="images/cont_icon5.png"  alt="profile" /></button>
                     <div>

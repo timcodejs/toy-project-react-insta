@@ -9,8 +9,8 @@ const Container = () => {
     return(
         <InstaContainer>
             <Story />
-            {state.map(() => (
-                <Board />
+            {state.map((item) => (
+                <Board key={item} />
             ))}
         </InstaContainer>
     )
