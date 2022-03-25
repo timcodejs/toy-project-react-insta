@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import UserProfile from './userprofile';
 import Recommend from './recommend';
 import Infometa from './infometa';
+import { ZindexerContext } from '../reducer/zindexercontext';
 import styled from 'styled-components';
 
 
 const Userinfo = () => {
+    const { zindexer, dispatch } = useContext(ZindexerContext);
+
     return(
-        <>
-            <InstaUserInfo>
-                <UserProfile />
-                <Recommend />
-                <Infometa />
-            </InstaUserInfo>
-        </>
+        <InstaUserInfo style={{zIndex: zindexer}}>
+            <UserProfile setzindexer={dispatch} />
+            <Recommend />
+            <Infometa />
+        </InstaUserInfo>
     )
 }
 

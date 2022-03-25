@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Story = () => {
     const state = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     const [opacity, setOpacity] = useState('none');
-    const [count, setCount] = useState(1);
 
     const storyLeftBtn = useCallback((e) => {
         let parent = e.target.parentNode.parentNode;

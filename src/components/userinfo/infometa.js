@@ -3,26 +3,24 @@ import styled from 'styled-components';
 
 const Infometa = () => {
     return(
-        <>
-            <div>
-                <nav>
-                    <InfoList>
-                        <li><span>소개</span></li>
-                        <li><span>도움말</span></li>
-                        <li><span>홍보 센터</span></li>
-                        <li><span>API</span></li>
-                        <li><span>채용 정보</span></li>
-                        <li><span>개인정보처리방침</span></li>
-                        <li><span>약관</span></li>
-                        <li><span>위치</span></li>
-                        <li><span>인기 계정</span></li>
-                        <li><span>해시태그</span></li>
-                        <li><span>언어</span></li>
-                    </InfoList>
-                </nav>
-                <ClearDiv><span>© 2022 INSTAGRAM FROM META</span></ClearDiv>
-            </div>
-        </>
+        <div>
+            <nav>
+                <InfoList>
+                    <li><span>소개</span></li>
+                    <li><span>도움말</span></li>
+                    <li><span>홍보 센터</span></li>
+                    <li><span>API</span></li>
+                    <li><span>채용 정보</span></li>
+                    <li><span>개인정보처리방침</span></li>
+                    <li><span>약관</span></li>
+                    <li><span>위치</span></li>
+                    <li><span>인기 계정</span></li>
+                    <li><span>해시태그</span></li>
+                    <li><span>언어</span></li>
+                </InfoList>
+            </nav>
+            <ClearDiv><span>© 2022 INSTAGRAM FROM META</span></ClearDiv>
+        </div>
     )
 }
 

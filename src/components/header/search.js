@@ -69,7 +69,6 @@ const SearchPopup = styled.div`
     background-color: white;
     border-radius: 6px;
     box-shadow: 2px 2px 8px #d9d9d9;
-    z-index: 3;
     & > div:nth-child(1) {
         position: absolute;
         background: rgba(var(--d87,255,255,255),1);

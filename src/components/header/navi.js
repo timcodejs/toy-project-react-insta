@@ -104,7 +104,6 @@ const PopupProfile = styled.div`
     border-radius: 6px;
     box-shadow: 2px 2px 8px #d9d9d9;
     font-size: 14px;
-    z-index: 3;
     div {
         position: absolute;
         background: rgba(var(--d87,255,255,255),1);

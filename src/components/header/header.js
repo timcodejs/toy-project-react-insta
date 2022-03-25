@@ -19,7 +19,7 @@ export default Header;
 
 const HeaderWrap = styled.div`
     position: fixed;
-    z-index: 1;
+    z-index: 31;
     width: 100%;
     height: 60px;
     display: flex;

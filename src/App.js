@@ -1,13 +1,14 @@
 import './App.css';
 import Main from './pages/main';
+import ZindexerProvider from './components/reducer/zindexercontext';
 import { createGlobalStyle } from 'styled-components';
 
 function App() {
   return (
-    <>
+    <ZindexerProvider>
       <GlobalStyle />
       <Main />
-    </>
+    </ZindexerProvider>
   );
 }
 
@@ -25,21 +26,16 @@ const GlobalStyle = createGlobalStyle`
       font-family: sans-serif;
       -ms-overflow-style: none;
   }
-
-  
-  
   a {
     color: #000;
     text-decoration: none;
   }
-
   button {
     border: 0;
     background: none;
     cursor: pointer;
   }
-
   p {
     font-size: 14px;
   }
-`
+`;
