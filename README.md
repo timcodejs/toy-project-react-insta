@@ -28,4 +28,3 @@
   - App.js에 Provider 적용 후 필요한 컴포넌트에 ZindexerContext 적용
   - onClick Event 발생 시 "PLUS" action을 넘겨 initialState에 + 2를 넘기고 z-index 증가
   - Popup창을 닫을 시 "MINUS" action을 넘겨 initialState에 - 2를 넘기고 z-index 원복
-
